@@ -12,11 +12,12 @@ public class CountingWords {
 	{
 		BufferedReader br= new BufferedReader(new FileReader("DexterTweets"));
 		String tweet="";
+		int count=0;
 		while((tweet=br.readLine())!=null)
 		{
-			System.out.println(tweet);
+			count++;
 		}
-		System.out.println("Wait for some time");
+		System.out.println("Number of tweets:"+count);
 		br.close();
 	}
 
